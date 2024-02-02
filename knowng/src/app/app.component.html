@@ -1,3 +1,22 @@
 <h2>Curso de Angular</h2>
 <app-new-component></app-new-component>
 <router-outlet></router-outlet>
+
+
+<p [class.background-bg]="true"> {{ name }} -- {{ age }} -- {{ soma(1,2) }} </p>
+
+<p> {{ age > 4 ? true : false }}</p>
+
+<hr>
+<strong> Property binding </strong>
+
+<button [disabled]="IsDesabled"> Clicke em min</button>
+
+<hr>
+<strong> Attribute binding </strong>
+<p [attr.title]="name" [attr.aria-label]="name"> Jamba </p>
+
+<hr>
+<h2>Class and Style binding</h2>
+
+<div [class.colorName]="age < 34">{{name}}</div>

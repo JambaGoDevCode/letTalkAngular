@@ -12,4 +12,12 @@ import { NewComponentComponent } from './component/new-component/new-component.c
 })
 export class AppComponent {
   title = 'knowng';
+
+  public name = 'João Jamba';
+  public age = 29;
+  public IsDesabled = false;
+
+  public soma(valor1: number, valor2: number){
+    return valor1 + valor2
+  }
 }
